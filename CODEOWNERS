@@ -1,0 +1,5 @@
+[Databases]
+mysqlmain.tf @sidney_sysadmin
+
+[Operations]
+eks.tf @devon_devopseng

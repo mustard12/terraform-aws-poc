@@ -1,0 +1,2 @@
+variable "dbusername" {}
+variable "dbpassword" {}
