@@ -15,7 +15,7 @@ module "eks" {
       instance_type    = "m4.large"
       root_volume_type = "gp2"
       asg_max_size     = 5
-      asg_min_size     = 2
+      asg_min_size     = 1
       tags = [{
         key                 = "Terraform"
         value               = "true"
