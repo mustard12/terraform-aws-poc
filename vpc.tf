@@ -17,8 +17,8 @@ module "vpc" {
   propagate_public_route_tables_vgw = true
 
   tags = {
-    Terraform                                    = "true"
-    Environment                                  = "dev"
+    Terraform                                  = "true"
+    Environment                                = "dev"
     "kubernetes.io/cluster/musjung-gitops-eks" = "shared"
   }
   public_subnet_tags = {
