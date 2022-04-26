@@ -1,6 +1,6 @@
 module "eks" {
   source           = "terraform-aws-modules/eks/aws"
-  cluster_name     = "csaavedra-gitops-eks"
+  cluster_name     = "musjung-gitops-eks"
   cluster_version  = "1.19"
   subnets          = module.vpc.public_subnets
   write_kubeconfig = "false"

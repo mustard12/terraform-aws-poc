@@ -6,7 +6,7 @@ data "aws_availability_zones" "available" {
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
-  name = "csaavedra-gitops-vpc"
+  name = "musjung-gitops-eks"
   cidr = "172.21.0.0/16"
 
   azs            = [data.aws_availability_zones.available.names[0], data.aws_availability_zones.available.names[1]]
@@ -19,9 +19,9 @@ module "vpc" {
   tags = {
     Terraform                                    = "true"
     Environment                                  = "dev"
-    "kubernetes.io/cluster/csaavedra-gitops-eks" = "shared"
+    "kubernetes.io/cluster/musjung-gitops-eks" = "shared"
   }
   public_subnet_tags = {
-    "kubernetes.io/cluster/csaavedra-gitops-eks" = "shared"
+    "kubernetes.io/cluster/musjung-gitops-eks" = "shared"
   }
 }

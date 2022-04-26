@@ -1,5 +1,5 @@
 data "gitlab_group" "gitops-demo-apps" {
-  full_path = "tech-marketing/sandbox/gitops/apps"
+  full_path = "infograb/assets/eks/apps"
 }
 
 provider "gitlab" {
