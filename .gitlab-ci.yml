@@ -1,4 +1,4 @@
 include:
-  - project: 'tech-marketing/sandbox/gitops/infra/templates'
+  - project: 'infograb/assets/eks/infra/templates'
     file: '/terraform.gitlab-ci.yml'
 
